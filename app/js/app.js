@@ -3,7 +3,8 @@
 // Declare app level module which depends on views, and components
 angular.module('watcher', [
   'watcher.controllers',
-  'watcher.services'
+  'watcher.services',
+  'ngAnimate'
 ]).config(['$compileProvider', function($compileProvider) {
             $compileProvider.imgSrcSanitizationWhitelist(/^\s*(http|https?|ftp|file|blob|content):|data:image\//);
         }]);
